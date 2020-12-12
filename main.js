@@ -25,3 +25,23 @@ newP.textContent = "ME TOO";
 myDiv.appendChild(newP);
 
 container.appendChild(myDiv);
+
+// const btn = document.querySelector("#btn");
+// btn.onclick = () => alert("Hello World");
+
+const btn = document.querySelector('#btn');
+btn.addEventListener('click', () => {
+  alert("Hello World");
+});
+
+btn.addEventListener('click', function (e) {
+    console.log(e);
+  });
+
+btn.addEventListener('click', function (e) {
+    console.log(e.target);
+  });
+
+  btn.addEventListener('click', function (e) {
+    e.target.style.background = 'blue';
+  });
