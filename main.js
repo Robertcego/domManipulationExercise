@@ -12,36 +12,40 @@ blueText.textContent = "Hey I'm Blue!";
 
 container.appendChild(blueText);
 
-const myDiv = document.createElement("div");
-myDiv.style.backgroundColor = "pink";
-myDiv.style.border = "1px solid black";
+function addDiv() {
 
-const newDivText = document.createElement("h1");
-newDivText.textContent = "I'm a div";
-myDiv.appendChild(newDivText);
-
-const newP = document.createElement("p");
-newP.textContent = "ME TOO";
-myDiv.appendChild(newP);
-
-container.appendChild(myDiv);
-
+  const myDiv = document.createElement("div");
+  myDiv.style.backgroundColor = "pink";
+  myDiv.style.border = "1px solid black";
+  
+  const newDivText = document.createElement("h1");
+  newDivText.textContent = "I'm a div";
+  myDiv.appendChild(newDivText);
+  
+  const newP = document.createElement("p");
+  newP.textContent = "ME TOO";
+  myDiv.appendChild(newP);
+  
+  container.appendChild(myDiv);
+}
+ 
+addDiv();
 // const btn = document.querySelector("#btn");
 // btn.onclick = () => alert("Hello World");
 
-const btn = document.querySelector('#btn');
-btn.addEventListener('click', () => {
-  alert("Hello World");
-});
+// const btn = document.querySelector('#btn');
+// btn.addEventListener('click', () => {
+//   alert("Hello World");
+// });
 
-btn.addEventListener('click', function (e) {
-    console.log(e);
-  });
+// btn.addEventListener('click', function (e) {
+//     console.log(e);
+//   });
 
-btn.addEventListener('click', function (e) {
-    console.log(e.target);
-  });
+// btn.addEventListener('click', function (e) {
+//     console.log(e.target);
+//   });
 
-  btn.addEventListener('click', function (e) {
-    e.target.style.background = 'blue';
-  });
+//   btn.addEventListener('click', function (e) {
+//     e.target.style.background = 'blue';
+//   });
